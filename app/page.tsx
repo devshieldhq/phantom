@@ -25,7 +25,7 @@ export default function Home() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
         <a href="#" className="flex items-center gap-3"><div className="grid h-9 w-9 place-items-center border border-[#9cff6b]/60 text-[#9cff6b]"><Terminal size={19}/></div><div><div className="text-lg font-black tracking-[.22em] text-[#9cff6b]">PHANTOM<span className="animate-pulse">_</span></div><div className="text-[9px] tracking-[.25em] text-[#81958a]">THE INTERNET NEVER REALLY DIES</div></div></a>
         <div className="hidden items-center gap-2 text-xs text-[#81958a] sm:flex"><span className="h-2 w-2 rounded-full bg-[#9cff6b] shadow-[0_0_10px_#9cff6b]"/> SIGNAL ONLINE <span className="px-2 text-[#24352e]">/</span> PUBLIC NETWORK</div>
-        <button className="border border-[#9cff6b]/50 px-4 py-2 text-xs font-bold tracking-widest text-[#9cff6b] hover:bg-[#9cff6b] hover:text-[#090d0c]">CONNECT</button>
+        <a href="/login" className="border border-[#9cff6b]/50 px-4 py-2 text-xs font-bold tracking-widest text-[#9cff6b] hover:bg-[#9cff6b] hover:text-[#090d0c]">CONNECT</a>
       </div>
     </header>
     <div className="mx-auto max-w-7xl px-5 py-10">
