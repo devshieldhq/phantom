@@ -1,0 +1,11 @@
+# Architecture
+- Next.js App Router + TypeScript UI and server routes.
+- Supabase Auth, Postgres, Realtime, Storage.
+- All user-owned data protected by RLS; server-only service role.
+- Client Supabase uses @supabase/ssr browser client; server client reads cookies.
+- Domain modules: profiles, rooms, messages, archive, moderation.
+- Offline: cache public shell/public archive only; IndexedDB drafts; never shared-cache private messages.
+- AI behind provider-neutral server adapter; no provider-specific assumptions.
+- Validate all writes, limit message length and upload size/type, rate-limit mutation endpoints.
+- Realtime subscriptions must be scoped to authorized room membership.
+- Keep schema migrations in supabase/migrations.
